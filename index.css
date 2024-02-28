@@ -1,0 +1,59 @@
+body{
+    background-color: #bc1d1d;
+}
+
+.mainimg{position: relative;
+margin-top: 10vh;
+margin-left: 10vw;
+z-index: 1%; 
+transition: opacity 0.1s ease-out;
+animation: animate .9s ease-out infinite alternate;
+width:80%;
+}
+
+.love{
+    position: absolute; 
+    z-index: 2%;
+    left: 66.9vw;
+    top:55.8vh;
+   transform: translate(deg);
+   width:5%;
+
+}
+
+
+@keyframes animate{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.09);
+    }
+}
+
+.bear{
+    border-radius: 80px;
+    width:30%;
+    margin-left: 35vw;
+}
+
+
+@media only screen and (min-width:1200px){
+    .mainimg{
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    .bear{
+        width:11%;
+        text-align: center;
+       justify-content: center;
+       align-items: center;
+       margin-left: 45%;
+    }
+    .love{
+        width: 2.5%;
+        top:63vh;
+        left: 56vw;
+    }
+}
